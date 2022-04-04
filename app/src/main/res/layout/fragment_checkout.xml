@@ -117,7 +117,7 @@
                 style="@style/Widget.LunchTray.TextView.Subtotal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/divider"
-                android:text='@{viewModel.subtotal}'
+                android:text='@{@string/subtotal(viewModel.subtotal)}'
                 tools:text="Subtotal: $10.00"/>
 
             <!-- TODO: set the text to the current tax value from the view model -->
@@ -125,7 +125,7 @@
                 android:id="@+id/tax"
                 style="@style/Widget.LunchTray.TextView.Subtotal"
                 android:layout_marginTop="0dp"
-                android:text='@{viewModel.tax}'
+                android:text='@{@string/tax(viewModel.tax)}'
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/subtotal"
                 tools:text="Tax: $0.73"/>
@@ -136,7 +136,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAllCaps="true"
-                android:text='@{viewModel.total}'
+                android:text='@{@string/total(viewModel.total)}'
                 android:textAppearance="?attr/textAppearanceHeadline6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/tax"
